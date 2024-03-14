@@ -1,0 +1,30 @@
+.carousel-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 50px;
+
+
+  }
+.carousel-div{
+    width: 100%;
+    height: 100%;
+
+}
+
+  .slick-slide img {
+    width: 100%;
+    object-fit: cover;
+    
+  }
+  @media screen and (max-width:965px) {
+    .carousel-container {
+        width: 100%;
+        padding-top: 100px;
+        height: fit-content;
+        overflow: hidden;
+    
+    
+      }
+  }
+ 

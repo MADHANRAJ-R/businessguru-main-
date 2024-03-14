@@ -4,7 +4,7 @@ import companylogo from "../Assets/companyLogo.jpg";
 
 const Nav = () => {
   return (
-    <nav>
+    <header>
       <div className="nav-div-1">
         <div className="company-logo-div">
           <img src={companylogo} alt="company-logo" />
@@ -55,9 +55,9 @@ const Nav = () => {
         </div>
       </div>
       <div className="nav-btn">
-        <button>Sign Up Now</button>
+        <button>Register Now</button>
       </div>
-    </nav>
+    </header>
   );
 };
 

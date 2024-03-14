@@ -1,0 +1,28 @@
+
+.intro-div {
+    width: 100%;
+    min-height: 85vh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  
+  .intro-video-div {
+    width: 560px;
+    
+  }
+  .intro-video-div iframe{
+    width: 100%;
+    
+  }
+  .intro-content-div{
+    width: 500px;
+  }
+  .intro-content-div p {
+    text-overflow: clip;
+    font-size: 18px;
+  }
