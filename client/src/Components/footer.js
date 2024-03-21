@@ -1,8 +1,59 @@
 import React from "react";
 import "./footer.css";
 import companylogo from "../Assets/companyLogo.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleService1 = () => {
+    setTimeout(() => {
+      navigate("/services/startup-advisory");
+    }, 200);
+  };
+
+  const handleService2 = () => {
+    setTimeout(() => {
+      navigate("/services/human-resource");
+    }, 200);
+  };
+
+  const handleService3 = () => {
+    setTimeout(() => {
+      navigate("/services/marketing-consulting");
+    }, 200);
+  };
+
+  const handleService4 = () => {
+    setTimeout(() => {
+      navigate("/services/digital-marketing");
+    }, 200);
+  };
+
+  const handleService5 = () => {
+    setTimeout(() => {
+      navigate("/services/lead-generation");
+    }, 200);
+  };
+
+  const handleService6 = () => {
+    setTimeout(() => {
+      navigate("/services/virtual-cxo");
+    }, 200);
+  };
+
+  const handleService7 = () => {
+    setTimeout(() => {
+      navigate("/services/web-development");
+    }, 200);
+  };
+
+  const handleService8 = () => {
+    setTimeout(() => {
+      navigate("/services/customer-success-consulting");
+    }, 200);
+  };
+
   return (
     <footer>
       <div className="footer-top">
@@ -14,18 +65,14 @@ const Footer = () => {
         <div className="footer-2">
           <h3>Services</h3>
           <div className="s-inner-div-1">
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
-            <p>services link</p>
+            <p onClick={handleService1}>Startup Advisory</p>
+            <p onClick={handleService2}>Human Resource</p>
+            <p onClick={handleService3}>Marketing Consulting</p>
+            <p onClick={handleService4}>Digital Marketing</p>
+            <p onClick={handleService5}>Lead Generation</p>
+            <p onClick={handleService6}>Virtual CXO</p>
+            <p onClick={handleService7}>Web Development</p>
+            <p onClick={handleService8}>Customer Success Consulting</p>
           </div>
         </div>
         <div className="footer-3">
@@ -35,8 +82,15 @@ const Footer = () => {
             <p>CIN: U11111HR1111PTC111111 </p>
             <p>Address line 1</p>
             <p>Address line 2</p>
-            <span> <p><b>Phone:</b> 91.111111111</p></span>
-            <p><b>Email:</b> Businessguru@gmail.com</p>
+            <span>
+              {" "}
+              <p>
+                <b>Phone:</b> 91.111111111
+              </p>
+            </span>
+            <p>
+              <b>Email:</b> Businessguru@gmail.com
+            </p>
             <div className="footer-div-3">
               <div className="social-media-2">
                 <img src={companylogo} alt="company-logo" />
@@ -54,7 +108,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="copyright"> Copyright © 2024  BusinessGuru, All Rights Reserved.</div>
+      <div className="copyright">
+        {" "}
+        Copyright © 2024 BusinessGuru, All Rights Reserved.
+      </div>
     </footer>
   );
 };
