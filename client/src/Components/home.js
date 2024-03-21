@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
 
-const Home = ({ images }) => {
+const HomeComp = ({ images }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -30,4 +30,4 @@ const Home = ({ images }) => {
   );
 };
 
-export default Home;
+export default HomeComp;

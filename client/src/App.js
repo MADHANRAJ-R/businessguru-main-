@@ -2,9 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeRoute from "./routes/homeRoute";
 
-// import HomeImg1 from "./Assets/home-img-1.avif";
-// import HomeImg2 from "./Assets/home-img-2.avif";
-// import HomeImg3 from "./Assets/home-img-3.avif";
+
 // import Footer from "./Components/footer";
 // import Form from "./Components/form";
 // import Home from './Components/home';
@@ -17,7 +15,7 @@ import HomeRoute from "./routes/homeRoute";
 // import Servicetemplate from "./Components/servicetemplate";
 
 function App() {
-  // const images = [HomeImg1, HomeImg2, HomeImg3];
+  
   return (
     <Router>
       <Routes>
