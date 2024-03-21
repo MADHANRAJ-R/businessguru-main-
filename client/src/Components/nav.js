@@ -9,24 +9,28 @@ const Nav = () => {
   const handleCompany = () => {
     setTimeout(() => {
       navigate("/company");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleHome = () => {
     setTimeout(() => {
       navigate("/");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService = () => {
     setTimeout(() => {
       navigate("/services");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleContact = () => {
     setTimeout(() => {
       navigate("/contact");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
@@ -35,48 +39,56 @@ const Nav = () => {
   const handleService1 = () => {
     setTimeout(() => {
       navigate("/services/startup-advisory");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService2 = () => {
     setTimeout(() => {
       navigate("/services/human-resource");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService3 = () => {
     setTimeout(() => {
       navigate("/services/marketing-consulting");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService4 = () => {
     setTimeout(() => {
       navigate("/services/digital-marketing");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService5 = () => {
     setTimeout(() => {
       navigate("/services/lead-generation");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService6 = () => {
     setTimeout(() => {
       navigate("/services/virtual-cxo");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService7 = () => {
     setTimeout(() => {
       navigate("/services/web-development");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService8 = () => {
     setTimeout(() => {
       navigate("/services/customer-success-consulting");
+      window.scrollTo(0, 0);
     }, 200);
   };
 

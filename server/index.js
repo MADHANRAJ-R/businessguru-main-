@@ -21,6 +21,21 @@ app.use(express.json());
 
 // Email Templates
 const obj = {
+  Mainservice: (organization, name, email, phone, message) => {
+    let mailContent = `<p>You got a new visitor for Business Guru website.</p>
+                     <p>Enquiry: Services <br /> 
+                     Organization: ${organization} <br />
+                     Name: ${name} <br />
+                     Email: ${email} <br />
+                     WhatsApp Number: ${phone}`;
+
+    if (message.trim() !== "") {
+      mailContent += `<br /> Message: ${message}`;
+    }
+    mailContent += `</p>`;
+    return mailContent;
+  },
+
   service1: (organization, name, email, phone, message) => {
     let mailContent = `<p>You got a new visitor for Business Guru website.</p>
                      <p>Enquiry: Start-Up Advisory <br /> 
@@ -141,6 +156,38 @@ const obj = {
     return mailContent;
   },
 };
+
+// Main Service
+app.post("/services", (req, res) => {
+  const { organization, name, phone, email, message } = req.body;
+  //nodemailer transporter
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "daskrishna0902@gmail.com",
+      pass: process.env.PASS,
+    },
+  });
+
+  // Email content
+  const mailOptions = {
+    from: email,
+    to: "daskrishna0902@gmail.com",
+    subject: "New visitor for Business Guru website",
+    html: obj.Mainservice(organization, name, email, phone, message),
+  };
+
+  // Send email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error("Error sending email:", error);
+      res.status(500).send("Error sending email");
+    } else {
+      console.log("Email sent:", info.response);
+      res.status(200).send("Email sent successfully");
+    }
+  });
+});
 
 //service-1
 app.post("/startup-advisory", (req, res) => {

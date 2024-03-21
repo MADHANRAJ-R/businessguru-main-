@@ -1,35 +1,104 @@
 import React from "react";
 import companylogo from "../Assets/companyLogo.jpg";
 import "./servicesPortfolio.css";
+import { useNavigate } from "react-router-dom";
 
 const ServicesPortfolio = () => {
+  const navigate = useNavigate();
+
+  // services
+
+  const handleService1 = () => {
+    setTimeout(() => {
+      navigate("/services/startup-advisory");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService2 = () => {
+    setTimeout(() => {
+      navigate("/services/human-resource");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService3 = () => {
+    setTimeout(() => {
+      navigate("/services/marketing-consulting");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService4 = () => {
+    setTimeout(() => {
+      navigate("/services/digital-marketing");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService5 = () => {
+    setTimeout(() => {
+      navigate("/services/lead-generation");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService6 = () => {
+    setTimeout(() => {
+      navigate("/services/virtual-cxo");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService7 = () => {
+    setTimeout(() => {
+      navigate("/services/web-development");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
+  const handleService8 = () => {
+    setTimeout(() => {
+      navigate("/services/customer-success-consulting");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
   return (
     <div className="sp-main-div">
       <h1>ServicesPortfolio</h1>
       <div className="ServicesPortfolio-div">
-        <div className="ServicesPortfolio-card">
+        <div className="ServicesPortfolio-card" onClick={handleService1}>
           <img src={companylogo} alt="company-logo" />
-          <h3>Shared Services</h3>
+          <h3>Startup-Advisory</h3>
         </div>
-        <div className="ServicesPortfolio-card">
+        <div className="ServicesPortfolio-card" onClick={handleService2}>
           <img src={companylogo} alt="company-logo" />
-          <h3>Shared Services</h3>
+          <h3>Human Resource</h3>
         </div>
-        <div className="ServicesPortfolio-card">
+        <div className="ServicesPortfolio-card" onClick={handleService3}>
           <img src={companylogo} alt="company-logo" />
-          <h3>Shared Services</h3>
+          <h3>Marketing Consulting</h3>
         </div>
-        <div className="ServicesPortfolio-card">
+        <div className="ServicesPortfolio-card" onClick={handleService4}>
           <img src={companylogo} alt="company-logo" />
-          <h3>Shared Services</h3>
+          <h3>Digital Marketing</h3>
         </div>
-        <div className="ServicesPortfolio-card">
+        <div className="ServicesPortfolio-card" onClick={handleService5}>
           <img src={companylogo} alt="company-logo" />
-          <h3>Shared Services</h3>
+          <h3>Lead Generation</h3>
         </div>
-        <div className="ServicesPortfolio-card">
+        <div className="ServicesPortfolio-card" onClick={handleService6}>
           <img src={companylogo} alt="company-logo" />
-          <h3>Shared Services</h3>
+          <h3>Virtual CXO</h3>
+        </div>
+        <div className="ServicesPortfolio-card" onClick={handleService7}>
+          <img src={companylogo} alt="company-logo" />
+          <h3>Web Development</h3>
+        </div>
+        <div className="ServicesPortfolio-card" onClick={handleService8}>
+          <img src={companylogo} alt="company-logo" />
+          <h3>Customer Success Consulting</h3>
         </div>
       </div>
     </div>

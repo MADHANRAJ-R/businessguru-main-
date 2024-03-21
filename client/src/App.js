@@ -1,27 +1,15 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeRoute from "./routes/homeRoute";
-
-
-// import Footer from "./Components/footer";
-// import Form from "./Components/form";
-// import Home from './Components/home';
-// import Intro from './Components/intro';
-// import Nav from "./Components/nav";
-// import ServicesPortfolio from "./Components/servicesPortfolio";
-
-// import Towhom from './Components/towhom';
-// import Why from './Components/why';
-// import Servicetemplate from "./Components/servicetemplate";
+import ServiceRoute from "./routes/serviceroute";
 
 function App() {
-  
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomeRoute />} />
         <Route path="/company" element={<HomeRoute />} />
-        <Route path="/services" element={<HomeRoute />} />
+        <Route path="/services" element={<ServiceRoute />} />
         <Route path="/contact" element={<HomeRoute />} />
         <Route path="/services/startup-advisory" element={<HomeRoute />} />
         <Route path="/services/human-resource" element={<HomeRoute />} />

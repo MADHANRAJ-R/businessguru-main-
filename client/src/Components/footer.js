@@ -6,58 +6,73 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
 
+  const handleHome = () => {
+    setTimeout(() => {
+      navigate("/");
+      window.scrollTo(0, 0);
+    }, 200);
+  };
+
   const handleService1 = () => {
     setTimeout(() => {
       navigate("/services/startup-advisory");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService2 = () => {
     setTimeout(() => {
       navigate("/services/human-resource");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService3 = () => {
     setTimeout(() => {
       navigate("/services/marketing-consulting");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService4 = () => {
     setTimeout(() => {
       navigate("/services/digital-marketing");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService5 = () => {
     setTimeout(() => {
       navigate("/services/lead-generation");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService6 = () => {
     setTimeout(() => {
       navigate("/services/virtual-cxo");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService7 = () => {
     setTimeout(() => {
       navigate("/services/web-development");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   const handleService8 = () => {
     setTimeout(() => {
       navigate("/services/customer-success-consulting");
+      window.scrollTo(0, 0);
     }, 200);
   };
 
   return (
     <footer>
       <div className="footer-top">
-        <div className="footer-1">
+        <div className="footer-1" onClick={handleHome}>
           <img src={companylogo} alt="company-logo" />
           <p className="title">BusinessGuru</p>
           <p className="title-quote">Connect | Consult | Collaborate</p>
