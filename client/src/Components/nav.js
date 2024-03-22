@@ -95,11 +95,13 @@ const Nav = () => {
   return (
     <header>
       <div className="nav-div-1">
-        <div className="company-logo-div">
+        <div className="company-logo-div" onClick={handleHome}>
           <img src={companylogo} alt="company-logo" />
         </div>
         <div className="title-div">
-          <p className="title">BusinessGuru</p>
+          <p className="title" onClick={handleHome}>
+            BusinessGuru
+          </p>
           <p className="title-quote">Connect | Consult | Collaborate</p>
         </div>
       </div>

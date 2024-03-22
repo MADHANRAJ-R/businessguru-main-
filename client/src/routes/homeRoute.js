@@ -17,9 +17,9 @@ const HomeRoute = () => {
       <Header />
       <HomeComp images={images} />
       <Intro />
+      <ServicesPortfolio />
       <Why />
       <ToWhom />
-      <ServicesPortfolio />
       <Footer />
     </div>
   );

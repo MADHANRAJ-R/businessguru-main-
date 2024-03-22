@@ -2,6 +2,15 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomeRoute from "./routes/homeRoute";
 import ServiceRoute from "./routes/serviceroute";
+import ServiceRoute1 from "./routes/serviceroute1";
+import ServiceRoute2 from "./routes/serviceroute2";
+import ServiceRoute3 from "./routes/serviceroute3";
+import ServiceRoute4 from "./routes/serviceroute4";
+import ServiceRoute5 from "./routes/serviceroute5";
+import ServiceRoute6 from "./routes/serviceroute6";
+import ServiceRoute7 from "./routes/serviceroute7";
+import ServiceRoute8 from "./routes/serviceroute8";
+import ContactRoute from "./routes/contactroute";
 
 function App() {
   return (
@@ -10,17 +19,20 @@ function App() {
         <Route path="/" element={<HomeRoute />} />
         <Route path="/company" element={<HomeRoute />} />
         <Route path="/services" element={<ServiceRoute />} />
-        <Route path="/contact" element={<HomeRoute />} />
-        <Route path="/services/startup-advisory" element={<HomeRoute />} />
-        <Route path="/services/human-resource" element={<HomeRoute />} />
-        <Route path="/services/marketing-consulting" element={<HomeRoute />} />
-        <Route path="/services/digital-marketing" element={<HomeRoute />} />
-        <Route path="/services/lead-generation" element={<HomeRoute />} />
-        <Route path="/services/virtual-cxo" element={<HomeRoute />} />
-        <Route path="/services/web-development" element={<HomeRoute />} />
+        <Route path="/contact" element={<ContactRoute />} />
+        <Route path="/services/startup-advisory" element={<ServiceRoute1 />} />
+        <Route path="/services/human-resource" element={<ServiceRoute2 />} />
+        <Route
+          path="/services/marketing-consulting"
+          element={<ServiceRoute3 />}
+        />
+        <Route path="/services/digital-marketing" element={<ServiceRoute4 />} />
+        <Route path="/services/lead-generation" element={<ServiceRoute5 />} />
+        <Route path="/services/virtual-cxo" element={<ServiceRoute6 />} />
+        <Route path="/services/web-development" element={<ServiceRoute7 />} />
         <Route
           path="/services/customer-success-consulting"
-          element={<HomeRoute />}
+          element={<ServiceRoute8 />}
         />
       </Routes>
     </Router>
