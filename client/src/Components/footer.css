@@ -57,6 +57,7 @@ footer {
   align-items: flex-start;
   justify-content: center;
 }
+
 .s-inner-div-1 p {
   font-size: 18px;
   cursor: pointer;
@@ -77,6 +78,7 @@ footer {
   font-size: 18px;
   font-weight: 450;
 }
+
 .footer-div-3 {
   margin-top: 30px;
   width: fit-content;

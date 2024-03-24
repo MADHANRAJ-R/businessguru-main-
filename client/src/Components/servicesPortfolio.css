@@ -1,7 +1,7 @@
 .sp-main-div {
   width: 100%;
 
-  padding: 20px;
+  padding:40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -9,30 +9,32 @@
   gap: 15px;
 }
 .sp-main-div h1 {
-  font-size: 1.7em;
+  font-size: 40px;
 }
 .ServicesPortfolio-div {
+  margin: 1rem 0;
   width: 100%;
-  max-width: 700px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .ServicesPortfolio-card {
+  width:calc(25% - 10px);
   text-align: center;
   padding: 20px;
 
   /* border: 1px solid rgb(35, 120, 4); */
 }
 .ServicesPortfolio-card h3 {
-  font-size: 0.8em;
-  font-weight: 600;
+  font-size: 17px;
+  margin: 10px auto;
+  font-weight:bold;
   text-align: center;
+  text-wrap: nowrap;
 }
 
 .ServicesPortfolio-card img {
@@ -41,8 +43,23 @@
   border: 1px solid black;
 }
 @media only screen and (max-width: 960px) {
+  .sp-main-div {
+   
+  
+    padding:40px 0;
+    
+    gap: 5px;
+  }
   .ServicesPortfolio-div {
     width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    gap: 0;
+    justify-content: space-between;
+  align-items:center;
+  }
+  .sp-main-div h1 {
+    font-size: 30px;
   }
   .ServicesPortfolio-card {
     width: calc(50% - 10px);
@@ -50,5 +67,10 @@
 
   .ServicesPortfolio-card img {
     max-width: 60px;
+  }
+  .ServicesPortfolio-card h3 {
+    font-size: 16px;
+    margin: 3px auto;
+    text-wrap: wrap;
   }
 }

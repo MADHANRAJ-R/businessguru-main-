@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import companylogo from "../Assets/companyLogo.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const navigate = useNavigate();
+  const [isServiceOpen, setIsServiceOpen] = useState(false);
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   const handleCompany = () => {
     setTimeout(() => {
@@ -21,6 +23,8 @@ const Nav = () => {
   };
 
   const handleService = () => {
+    setIsServiceOpen(!isServiceOpen);
+    setIsSubmenuOpen(false);
     setTimeout(() => {
       navigate("/services");
       window.scrollTo(0, 0);
@@ -51,6 +55,7 @@ const Nav = () => {
   };
 
   const handleService3 = () => {
+    setIsSubmenuOpen(!isSubmenuOpen);
     setTimeout(() => {
       navigate("/services/marketing-consulting");
       window.scrollTo(0, 0);
@@ -94,14 +99,12 @@ const Nav = () => {
 
   return (
     <header>
-      <div className="nav-div-1">
-        <div className="company-logo-div" onClick={handleHome}>
+      <div onClick={handleHome} className="nav-div-1">
+        <div className="company-logo-div">
           <img src={companylogo} alt="company-logo" />
         </div>
         <div className="title-div">
-          <p className="title" onClick={handleHome}>
-            BusinessGuru
-          </p>
+          <p className="title">BusinessGuru</p>
           <p className="title-quote">Connect | Consult | Collaborate</p>
         </div>
       </div>
@@ -115,7 +118,7 @@ const Nav = () => {
             </div>
             <div className="contact-div-1">
               <img src={companylogo} alt="company-logo" />
-              <p>91.9555626260</p>
+              <p>businessguru@gmail.com</p>
             </div>
           </div>
 
@@ -134,19 +137,22 @@ const Nav = () => {
             </div>
           </div>
         </div>
+        <input type="checkbox" id="check" />
+        <label for="check" className="close-menu"><i className="fas fa-times"></i></label>
+
         <div className="router-div">
           <p onClick={handleHome}>Home</p>
           <p onClick={handleCompany}>Company</p>
           <p>
             <p onClick={handleService}>
-              Service <i className="fas fa-caret-down"></i>
+            Service <i className={`fas fa-caret-${isServiceOpen ? "up" : "down"}`}></i>
             </p>
             <div className="dropdownmenu">
               <p onClick={handleService1}>Start-Up Advisory</p>
               <p onClick={handleService2}>Human Resource</p>
               <p>
                 <p onClick={handleService3}>
-                  Marketing Consulting <i className="fas fa-caret-right"></i>
+                Marketing Consulting <i className={`fas fa-caret-${isSubmenuOpen ? "right" : "down"}`}></i>
                 </p>
                 <div className="dropdownmenu2">
                   <p onClick={handleService4}>Digital Marketing</p>
@@ -157,14 +163,20 @@ const Nav = () => {
               <p onClick={handleService6}>Virtual CXO</p>
               <p onClick={handleService7}>Web Development</p>
               <p onClick={handleService8}>Customer Success Consulting</p>
+
             </div>
+      
           </p>
           <p onClick={handleContact}>Contact</p>
         </div>
+        <label for="check" className="open-menu"><i className="fas fa-bars"></i></label>
+
       </div>
+      
       <div className="nav-btn">
-        <button>Register Now</button>
+        <button onClick={handleContact}>Get in Touch</button>
       </div>
+      
     </header>
   );
 };

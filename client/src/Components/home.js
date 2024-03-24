@@ -1,32 +1,64 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./home.css";
-
-const HomeComp = ({ images }) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5500,
-    centerMode: true,
-    centerPadding: "0",
-  };
-
+import img1 from "../Assets/home-img-1.avif";
+import img2 from "../Assets/home-img-2.avif";
+import img3 from "../Assets/home-img-3.avif";
+import img4 from "../Assets/home-img-2.avif";
+const HomeComp = () => {
   return (
-    <div className="carousel-container">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div className="carousel-div" key={index}>
-            <img src={image} alt="image1" className="slider-img" />
-          </div>
-        ))}
-      </Slider>
+    <section className="containerhome">
+      <div className="banner1">
+      <img src={img1} alt="imagebackground" />
+      <div className="text-box text-box1">
+        <p>
+          Outsourcing Services-IT | Finance | Legal & Compilance |HR | Sales &
+          Marketing
+        </p>
+        <h1>Shared Services</h1>
+        <p>Engage | Read | Operate | Transfer</p>
+        <button>show more</button>
+      </div>
     </div>
+
+    <div className="banner2">
+      <img src={img2} alt="imagebackground" />
+      <div className="text-box text-box2">
+        <p>
+          Outsourcing Services-IT | Finance | Legal & Compilance |HR | Sales &
+          Marketing
+        </p>
+        <h1>Shared Services</h1>
+        <p>Engage | Read | Operate | Transfer</p>
+        <button>show more</button>
+      </div>
+    </div>
+
+    <div className="banner3">
+      <img src={img3} alt="imagebackground" />
+      <div className="text-box text-box3">
+        <p>
+          Outsourcing Services-IT | Finance | Legal & Compilance |HR | Sales &
+          Marketing
+        </p>
+        <h1>Shared Services</h1>
+        <p>Engage | Read | Operate | Transfer</p>
+        <button>show more</button>
+      </div>
+    </div>
+
+    <div className="banner4">
+      <img src={img4} alt="imagebackground" />
+      <div className="text-box text-box4">
+        <p>
+          Outsourcing Services-IT | Finance | Legal & Compilance |HR | Sales &
+          Marketing
+        </p>
+        <h1>Shared Services</h1>
+        <p>Engage | Read | Operate | Transfer</p>
+        <button>show more</button>
+      </div>
+    </div>
+    </section>
   );
 };
 

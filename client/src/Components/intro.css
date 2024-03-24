@@ -26,3 +26,15 @@
     text-overflow: clip;
     font-size: 18px;
   }
+
+
+  @media only screen and (max-width: 900px) {
+    .intro-div {
+      
+      padding:40px 15px;
+     
+    }
+    
+   
+
+  }

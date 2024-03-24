@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./form.css";
 import axios from "axios";
-
-function Form(props) {
+import companylogo from "../Assets/companyLogo.jpg";
+function Contactform(props) {
   const [organization, setOrganization] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -41,13 +40,38 @@ function Form(props) {
 
   return (
     <div className="container">
-      <div className="left">
-        <h2>
-          {props.serviceName} Services
-          {/* <br /> */}
-          
-        </h2>
-      </div>
+        <div className="footer-3">
+          <h2>Get in Touch</h2>
+          <div className="s-inner-div">
+            <p>BusinessGuru Consulting Pvt. Ltd.</p>
+            <p>CIN: U11111HR1111PTC111111 </p>
+            <p>Address line 1</p>
+            <p>Address line 2</p>
+            <span>
+              {" "}
+              <p>
+                <b>Phone:</b> 91.111111111
+              </p>
+            </span>
+            <p>
+              <b>Email:</b> Businessguru@gmail.com
+            </p>
+            <div className="footer-div-3">
+              <div className="social-media-2">
+                <img src={companylogo} alt="company-logo" />
+              </div>
+              <div className="social-media-2">
+                <img src={companylogo} alt="company-logo" />
+              </div>
+              <div className="social-media-2">
+                <img src={companylogo} alt="company-logo" />
+              </div>
+              <div className="social-media-2">
+                <img src={companylogo} alt="company-logo" />
+              </div>
+            </div>
+          </div>
+        </div>
      
         <div className="form-container">
           <form onSubmit={handleSubmit}>
@@ -108,4 +132,4 @@ function Form(props) {
   );
 }
 
-export default Form;
+export default Contactform;
