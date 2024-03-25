@@ -108,8 +108,18 @@ header {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
+
+
   /* border: 1px solid black; */
 }
+.social-media-1 img:hover {
+ cursor: pointer;
+ transform: scale(1.1);
+
+}
+
+
+
 .router-div {
   padding: 0 1.5rem;
   width: 100%;
@@ -118,11 +128,24 @@ header {
   align-items: center;
 }
 .router-div p {
-  font-size: 1em;
+  font-size: 17px;
   font-weight: bold;
-  cursor: pointer;
+  
   position: relative;
+  
+  
 }
+.active{
+  color:maroon;
+  text-decoration: underline;
+
+}
+.router-div p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+ 
+}
+
 .dropdownmenu,
 .dropdownmenu2 {
   display: none;
@@ -134,24 +157,36 @@ header {
   top: 100%;
   width: fit-content;
   height: fit-content;
-  margin: 0px;
-  background-color: rgb(255, 255, 255);
+  
+ 
+  background-color:rgb(250, 244, 239);
+  
+  
+}
+.dropdownmenu p:hover{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.dropdownmenu2{
+  color: black;
 }
 .router-div p:hover .dropdownmenu p {
   width: 220px;
   padding: 10px;
+  margin: 1px 0;
+  
 }
 .dropdownmenu p:hover .dropdownmenu2 {
   display: block;
   position: absolute;
   top: 0;
-  left: 220px;
-  background-color: white;
-}
+  left: 222px;
+  background-color:rgb(246, 237, 226);}
 
 .fas {
   float: right;
-  margin-left: 10px;
+  margin-left: 5px;
   padding-top: 3px;
 }
 
@@ -162,6 +197,8 @@ header {
 }
 .nav-btn button {
   padding: 1rem;
+  width: fit-content;
+  text-wrap: nowrap;
   font-size: 1em;
   font-weight: bold;
   background-color: black;

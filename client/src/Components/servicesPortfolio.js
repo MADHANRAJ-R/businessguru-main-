@@ -1,5 +1,12 @@
 import React from "react";
-import companylogo from "../Assets/companyLogo.jpg";
+import hrlogo from "../Assets/hrlogo.jpg";
+import customerlogo from "../Assets/customerlogo.jpg";
+import digilogo from "../Assets/digilogo.jpg";
+import leadgenlogo from "../Assets/leadgenlogo.jpg";
+import marketinglogo from "../Assets/marketinglogo.jpg";
+import startuplogo from "../Assets/startuplogo.jpg";
+import vrlogo from "../Assets/vrlogo.jpg";
+import webdevlogo from "../Assets/webdevlogo.jpg";
 import "./servicesPortfolio.css";
 import { useNavigate } from "react-router-dom";
 
@@ -69,35 +76,35 @@ const ServicesPortfolio = () => {
       <h1>ServicesPortfolio</h1>
       <div className="ServicesPortfolio-div">
         <div className="ServicesPortfolio-card" onClick={handleService1}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={startuplogo} alt="company-logo" />
           <h3>Startup-Advisory</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService2}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={hrlogo} alt="company-logo" />
           <h3>Human Resource</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService3}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={marketinglogo} alt="company-logo" />
           <h3>Marketing Consulting</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService4}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={digilogo} alt="company-logo" />
           <h3>Digital Marketing</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService5}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={leadgenlogo} alt="company-logo" />
           <h3>Lead Generation</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService6}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={vrlogo} alt="company-logo" />
           <h3>Virtual CXO</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService7}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={webdevlogo} alt="company-logo" />
           <h3>Web Development</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService8}>
-          <img src={companylogo} alt="company-logo" />
+          <img src={customerlogo} alt="company-logo" />
           <h3>Customer Success Consulting</h3>
         </div>
       </div>

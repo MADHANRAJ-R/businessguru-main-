@@ -14,7 +14,7 @@ const HomeRoute = () => {
   const images = [HomeImg1, HomeImg2, HomeImg3];
   return (
     <div>
-      <Header />
+      <Header active1="active" />
       <HomeComp images={images} />
       <Intro />
       <ServicesPortfolio />

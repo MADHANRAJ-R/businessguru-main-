@@ -7,7 +7,7 @@ import Contactform from "../Components/contactform";
 const ContactRoute = () => {
   return (
     <div>
-      <Header />
+      <Header active2="active" />
       <Contactform  apiRoute="http://localhost:3001/contact"  />
       <Footer />
     </div>

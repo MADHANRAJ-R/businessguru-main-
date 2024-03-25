@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import "./nav.css";
 import companylogo from "../Assets/companyLogo.jpg";
+import instalogo from "../Assets/instalogo.jpg";
+import fblogo from "../Assets/fblogo.jpg";
+import walogo from "../Assets/walogo.jpg";
+import linkedinlogo from "../Assets/linkedinlogo.jpg";
+import phonelogo from "../Assets/phonelogo2.png";
+import emaillogo from "../Assets/emaillogo2.png";
+
 import { useNavigate } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
   const navigate = useNavigate();
   const [isServiceOpen, setIsServiceOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
@@ -113,27 +120,27 @@ const Nav = () => {
         <div className="nav-div-2">
           <div className="nav-contact">
             <div className="contact-div-1">
-              <img src={companylogo} alt="company-logo" />
+              <img src={phonelogo} alt="company-logo" />
               <p>91.9555626260</p>
             </div>
             <div className="contact-div-1">
-              <img src={companylogo} alt="company-logo" />
+              <img src={emaillogo} alt="company-logo" />
               <p>businessguru@gmail.com</p>
             </div>
           </div>
 
           <div className="nav-div-3">
             <div className="social-media-1">
-              <img src={companylogo} alt="company-logo" />
+              <img src={linkedinlogo} alt="company-logo" />
             </div>
             <div className="social-media-1">
-              <img src={companylogo} alt="company-logo" />
+              <img src={fblogo} alt="company-logo" />
             </div>
             <div className="social-media-1">
-              <img src={companylogo} alt="company-logo" />
+              <img src={instalogo} alt="company-logo" />
             </div>
             <div className="social-media-1">
-              <img src={companylogo} alt="company-logo" />
+              <img src={walogo} alt="company-logo" />
             </div>
           </div>
         </div>
@@ -141,10 +148,10 @@ const Nav = () => {
         <label for="check" className="close-menu"><i className="fas fa-times"></i></label>
 
         <div className="router-div">
-          <p onClick={handleHome}>Home</p>
+          <p className={props.active1} onClick={handleHome}>Home</p>
           <p onClick={handleCompany}>Company</p>
           <p>
-            <p onClick={handleService}>
+            <p className={props.active3} onClick={handleService}>
             Service <i className={`fas fa-caret-${isServiceOpen ? "up" : "down"}`}></i>
             </p>
             <div className="dropdownmenu">
@@ -167,7 +174,7 @@ const Nav = () => {
             </div>
       
           </p>
-          <p onClick={handleContact}>Contact</p>
+          <p className={props.active2} onClick={handleContact}>Contact</p>
         </div>
         <label for="check" className="open-menu"><i className="fas fa-bars"></i></label>
 

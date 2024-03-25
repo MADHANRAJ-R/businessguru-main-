@@ -95,8 +95,14 @@ footer {
 .social-media-2 img {
   width: 100%;
   object-fit: cover;
-  border: 1px solid black;
+  border-radius: 50%;
+
 }
+.social-media-2 img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+ 
+ }
 
 .copyright {
   width: 100%;

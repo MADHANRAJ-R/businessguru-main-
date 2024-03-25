@@ -1,5 +1,9 @@
 import React from "react";
 import "./footer.css";
+import instalogo from "../Assets/instalogo.jpg";
+import fblogo from "../Assets/fblogo.jpg";
+import walogo from "../Assets/walogo.jpg";
+import linkedinlogo from "../Assets/linkedinlogo.jpg";
 import companylogo from "../Assets/companyLogo.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -108,16 +112,16 @@ const Footer = () => {
             </p>
             <div className="footer-div-3">
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={linkedinlogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={fblogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={instalogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={walogo} alt="company-logo" />
               </div>
             </div>
           </div>
