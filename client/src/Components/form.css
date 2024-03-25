@@ -96,7 +96,7 @@
   }
   @media only screen and (max-width: 900px) {
     .container {
-      background-color:black  !important;
+      background-color:red;
       flex-direction: column;
       flex-wrap: wrap;
       min-height: 80vh;
