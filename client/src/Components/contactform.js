@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
-import companylogo from "../Assets/companyLogo.jpg";
+import instalogo from "../Assets/instalogo.jpg";
+import fblogo from "../Assets/fblogo.jpg";
+import walogo from "../Assets/walogo.jpg";
+import linkedinlogo from "../Assets/linkedinlogo.jpg";
 function Contactform(props) {
   const [organization, setOrganization] = useState("");
   const [name, setName] = useState("");
@@ -58,16 +61,16 @@ function Contactform(props) {
             </p>
             <div className="footer-div-3">
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={linkedinlogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={fblogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={instalogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={companylogo} alt="company-logo" />
+                <img src={walogo} alt="company-logo" />
               </div>
             </div>
           </div>
