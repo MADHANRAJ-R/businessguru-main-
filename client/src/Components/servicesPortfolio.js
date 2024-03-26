@@ -73,7 +73,7 @@ const ServicesPortfolio = () => {
 
   return (
     <div className="sp-main-div">
-      <h1>ServicesPortfolio</h1>
+      <h1>Service Portfolio</h1>
       <div className="ServicesPortfolio-div">
         <div className="ServicesPortfolio-card" onClick={handleService1}>
           <img src={startuplogo} alt="company-logo" />

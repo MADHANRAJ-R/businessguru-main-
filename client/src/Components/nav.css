@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content:space-around;
   align-items: center;
-  z-index: 1;
+  z-index: 10000000000000;
   column-gap: 10px;
   /* color: white; */
   /* background-color: rgb(232, 238, 248); */

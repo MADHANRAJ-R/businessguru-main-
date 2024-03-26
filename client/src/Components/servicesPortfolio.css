@@ -8,7 +8,7 @@
   align-items: center;
   gap: 15px;
   
-  background-color: rgb(215, 236, 255);
+  background-color: antiquewhite;
 }
 .sp-main-div h1 {
   font-size: 40px;
@@ -42,7 +42,7 @@
   font-weight:bold;
   text-align: center;
   text-wrap: nowrap;
-  color:rgb(128, 68, 0);
+  color:maroon;
   cursor: pointer;
 }
 
