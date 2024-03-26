@@ -9,8 +9,9 @@ header {
   z-index: 1;
   column-gap: 10px;
   /* color: white; */
-  background-color: rgb(232, 238, 248);
+  /* background-color: rgb(232, 238, 248); */
   /* backdrop-filter: blur(100px); */
+  background-color: rgb(246, 249, 255);
 }
 .nav-div-1 {
   height: 100%;
@@ -19,6 +20,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   /* border: 2px solid orange; */
 }
 .company-logo-div {
@@ -29,6 +31,18 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding: 0.2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.2s all ease-in-out;
+  
+
+}
+.company-logo-div img:hover {
+  padding: 0;
+  
+  
 }
 .title-div {
   display: flex;

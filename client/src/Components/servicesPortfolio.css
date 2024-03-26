@@ -7,9 +7,12 @@
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  
+  background-color: rgb(215, 236, 255);
 }
 .sp-main-div h1 {
   font-size: 40px;
+  color:black;
 }
 .ServicesPortfolio-div {
   margin: 1rem 0;
@@ -26,21 +29,40 @@
   width:calc(25% - 10px);
   text-align: center;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   /* border: 1px solid rgb(35, 120, 4); */
 }
 .ServicesPortfolio-card h3 {
-  font-size: 17px;
+  font-size: 18px;
   margin: 10px auto;
   font-weight:bold;
   text-align: center;
   text-wrap: nowrap;
+  color:rgb(128, 68, 0);
+  cursor: pointer;
 }
 
 .ServicesPortfolio-card img {
   width: 100%;
   max-width: 150px;
-  border: 1px solid black;
+  padding: 1rem;
+  
+  border: 2px solid maroon;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  transition: 0.3s all ease-in-out;
+
+}
+.ServicesPortfolio-card img:hover {
+  padding: 0.5rem;
+  cursor: pointer;
+ 
+
 }
 @media only screen and (max-width: 960px) {
   .sp-main-div {

@@ -17,14 +17,22 @@
   }
   .intro-video-div iframe{
     width: 100%;
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+
   }
   .intro-content-div{
     width: 500px;
   }
+  .intro-content-div h1{
+    margin-bottom: 1rem;
+    color: rgb(58, 58, 58);
+
+  }
   .intro-content-div p {
     text-overflow: clip;
     font-size: 18px;
+    color: rgb(68, 68, 68);
   }
 
 
