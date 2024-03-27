@@ -1,0 +1,134 @@
+  .hrsection{
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+    background-color: antiquewhite;
+  }
+  .hrh1{
+    margin:2rem auto;
+    font-size:30px ;
+  }
+  .leadgensection{
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+    background-color: antiquewhite;
+  }
+  .leadgenh1{
+    margin:2rem auto;
+    font-size: 30px;
+  }
+
+  .service-process-div {
+    width:100%;
+    padding: 40px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    row-gap: 100px;
+  }
+  
+
+  
+  .service-toWhom-text {
+    width:calc(33.33% - 10px);
+    height:fit-content ;
+    padding:0 20px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    text-align: left;
+    row-gap: 20px;
+    
+  }
+  .service-toWhom-text h1 {
+    
+    font-size: 20px;
+  }
+  
+  
+  .service-toWhom-text h2 {
+    
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(20, 20, 20);
+  }
+  
+  .service-toWhom-points {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .service-toWhom-points p{
+    margin: 6px 0;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(184, 183, 183);
+  }
+
+ 
+  @media only screen and (max-width:767px) {
+    
+    .hrh1{
+      margin:1rem auto;
+      font-size:26px ;
+    }
+    .leadgensection{
+      padding: 40px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: centers;
+      background-color: antiquewhite;
+    }
+    .leadgenh1{
+      margin:1rem auto;
+      font-size: 26px;
+    }
+
+
+
+    .service-process-div {
+        margin-top: 1rem;
+        row-gap: 50px;
+      }
+
+    .service-toWhom-text {
+        width:100%;
+        row-gap: 10px;
+    }
+    .service-toWhom-text h1 {
+    
+      font-size: 20px;
+    }
+    
+    
+    .service-toWhom-text h2 {
+      
+      font-size: 18px;
+      font-weight: 500;
+      color: rgb(20, 20, 20);
+    }
+    
+    .service-toWhom-points {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .service-toWhom-points p{
+      margin: 0;
+      font-size: 16px;
+      border-bottom: 1px solid rgb(184, 183, 183);
+    }
+  
+  
+  
+
+  }

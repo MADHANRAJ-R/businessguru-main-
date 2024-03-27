@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../Components/nav";
 import Footer from "../Components/footer";
 import Form from "../Components/form";
-import Servicetemplate from "../Components/servicetemplate";
+// import Servicetemplate from "../Components/servicetemplate";
+import Leadgen from "../Components/leadgen";
 
 const ServiceRoute5 = () => {
   return (
@@ -12,7 +13,7 @@ const ServiceRoute5 = () => {
         serviceName="Lead Generation"
         apiRoute="http://localhost:3001/lead-generation"
       />
-      <Servicetemplate />
+      <Leadgen />
       <Footer />
     </div>
   );
