@@ -3,7 +3,9 @@ import React from "react";
 const Leadgen = () => {
   return (
     <section className="leadgensection">
-        <h1 className="leadgenh1">CONCAT - Your Trusted Partner in Marketing and Lead Generation!</h1>
+      <h1 className="leadgenh1">
+        BUSINESS GURU - Your Trusted Partner in Marketing and Lead Generation!
+      </h1>
       <div className="service-process-div">
         <div className="service-toWhom-text">
           <h1>1. End-to-End Delivery</h1>
@@ -43,8 +45,8 @@ const Leadgen = () => {
         <div className="service-toWhom-text">
           <h1>5. Transparent Communication</h1>
           <h2>
-            The CONCAT stamp is synonymous with transparency – we believe in
-            keeping our clients informed every step of the way, thereby
+            The Business Guru stamp is synonymous with transparency – we believe
+            in keeping our clients informed every step of the way, thereby
             fostering an environment of trust and collaboration. We are
             committed to delivering the targeted number of leads, all of which
             are of high quality, which in turn are expected to ensure high

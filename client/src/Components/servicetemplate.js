@@ -1,20 +1,18 @@
-import React from 'react';
+import React from "react";
 import companylogo from "../Assets/companyLogo.jpg";
-import "./servicetemplate.css"
-const Servicetemplate = ({serviceMappings}) => {
+import "./servicetemplate.css";
+const Servicetemplate = ({ serviceMappings }) => {
   if (!Array.isArray(serviceMappings)) {
     // If it's not an array, return null or handle the error as needed
-    console.error('serviceMappings is not an array');
+    console.error("serviceMappings is not an array");
     return null;
   }
-  
+
   return (
-    <section  className="service-template">
+    <section className="service-template">
       <div className="service-template-div-1">
         <div className="intro-img-div">
-          
-            <img src={companylogo} alt="companylogo" />
-          
+          <img src={companylogo} alt="companylogo" />
         </div>
         <div className="service-intro-content-div">
           <h1>Introduction</h1>
@@ -44,20 +42,19 @@ const Servicetemplate = ({serviceMappings}) => {
         </div>
       </div>
 
-
       <div className="service-process-div">
-      {serviceMappings.map((mapping, index) => (
-        <div className="service-toWhom-text" key={index}>
-          <h1>{mapping.h1}</h1>
-          <h2>{mapping.h2}</h2>
-          <div className="service-toWhom-points">
-            {mapping.points.map((point, pointIndex) => (
-              <p key={pointIndex}>{point}</p>
-            ))}
+        {serviceMappings.map((mapping, index) => (
+          <div className="service-toWhom-text" key={index}>
+            <h1>{mapping.h1}</h1>
+            <h2>{mapping.h2}</h2>
+            <div className="service-toWhom-points">
+              {mapping.points.map((point, pointIndex) => (
+                <p key={pointIndex}>{point}</p>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </section>
   );
 };

@@ -145,21 +145,35 @@ const Nav = (props) => {
           </div>
         </div>
         <input type="checkbox" id="check" />
-        <label for="check" className="close-menu"><i className="fas fa-times"></i></label>
+        <label for="check" className="close-menu">
+          <i className="fas fa-times"></i>
+        </label>
 
         <div className="router-div">
-          <p className={props.active1} onClick={handleHome}>Home</p>
-          <p onClick={handleCompany}>Company</p>
+          <p className={props.active1} onClick={handleHome}>
+            Home
+          </p>
+          <p onClick={handleCompany} className={props.active4}>
+            Company
+          </p>
           <p>
             <p className={props.active3} onClick={handleService}>
-            Service <i className={`fas fa-caret-${isServiceOpen ? "up" : "down"}`}></i>
+              Service{" "}
+              <i
+                className={`fas fa-caret-${isServiceOpen ? "up" : "down"}`}
+              ></i>
             </p>
             <div className="dropdownmenu">
               <p onClick={handleService1}>Start-Up Advisory</p>
               <p onClick={handleService2}>Human Resource</p>
               <p>
                 <p onClick={handleService3}>
-                Marketing Consulting <i className={`fas fa-caret-${isSubmenuOpen ? "right" : "down"}`}></i>
+                  Marketing Consulting{" "}
+                  <i
+                    className={`fas fa-caret-${
+                      isSubmenuOpen ? "right" : "down"
+                    }`}
+                  ></i>
                 </p>
                 <div className="dropdownmenu2">
                   <p onClick={handleService4}>Digital Marketing</p>
@@ -170,20 +184,20 @@ const Nav = (props) => {
               <p onClick={handleService6}>Virtual CXO</p>
               <p onClick={handleService7}>Web Development</p>
               <p onClick={handleService8}>Customer Success Consulting</p>
-
             </div>
-      
           </p>
-          <p className={props.active2} onClick={handleContact}>Contact</p>
+          <p className={props.active2} onClick={handleContact}>
+            Contact
+          </p>
         </div>
-        <label for="check" className="open-menu"><i className="fas fa-bars"></i></label>
-
+        <label for="check" className="open-menu">
+          <i className="fas fa-bars"></i>
+        </label>
       </div>
-      
+
       <div className="nav-btn">
         <button onClick={handleContact}>Get in Touch</button>
       </div>
-      
     </header>
   );
 };
