@@ -1,7 +1,13 @@
 import React from "react";
 import companylogo from "../Assets/companyLogo.jpg";
 import "./servicetemplate.css";
-const Servicetemplate = (props) => {
+const Servicetemplate = ({ serviceMappings }) => {
+  if (!Array.isArray(serviceMappings)) {
+    // If it's not an array, return null or handle the error as needed
+    console.error("serviceMappings is not an array");
+    return null;
+  }
+
   return (
     <section className="service-template">
       <div className="service-template-div-1">
@@ -35,99 +41,19 @@ const Servicetemplate = (props) => {
           <b>Connect | Consult | Collaborate</b>
         </div>
       </div>
+
       <div className="service-process-div">
-        <div className="service-toWhom-text">
-          <h1>{props.title1}</h1>
-          <h2>{props.subtitle1}</h2>
-          <div className="service-toWhom-points">
-            <p>Helping you focus on your own core business operations</p>
-            <p>
-              Seeks a reliable partner with requisite subject matter expertise
-            </p>
-            <p>Needs wide range of services at best commercials</p>
-            <p>Corporate assurance on effective service delivery</p>
+        {serviceMappings.map((mapping, index) => (
+          <div className="service-toWhom-text" key={index}>
+            <h1>{mapping.h1}</h1>
+            <h2>{mapping.h2}</h2>
+            <div className="service-toWhom-points">
+              {mapping.points.map((point, pointIndex) => (
+                <p key={pointIndex}>{point}</p>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className="service-toWhom-text">
-          <h1>2. SERVICE SEEKER</h1>
-          <h2>
-            Need a trusted partner with strong fundamentals to own multiple
-            operational touch points
-          </h2>
-          <div className="service-toWhom-points">
-            <p>Helping you focus on your own core business operations</p>
-            <p>
-              Seeks a reliable partner with requisite subject matter expertise
-            </p>
-            <p>Needs wide range of services at best commercials</p>
-            <p>Corporate assurance on effective service delivery</p>
-          </div>
-        </div>
-
-        <div className="service-toWhom-text">
-          <h1>3. SERVICE SEEKER</h1>
-          <h2>
-            Need a trusted partner with strong fundamentals to own multiple
-            operational touch points
-          </h2>
-          <div className="service-toWhom-points">
-            <p>Helping you focus on your own core business operations</p>
-            <p>
-              Seeks a reliable partner with requisite subject matter expertise
-            </p>
-            <p>Needs wide range of services at best commercials</p>
-            <p>Corporate assurance on effective service delivery</p>
-          </div>
-        </div>
-
-        <div className="service-toWhom-text">
-          <h1>4. SERVICE SEEKER</h1>
-          <h2>
-            Need a trusted partner with strong fundamentals to own multiple
-            operational touch points
-          </h2>
-          <div className="service-toWhom-points">
-            <p>Helping you focus on your own core business operations</p>
-            <p>
-              Seeks a reliable partner with requisite subject matter expertise
-            </p>
-            <p>Needs wide range of services at best commercials</p>
-            <p>Corporate assurance on effective service delivery</p>
-          </div>
-        </div>
-
-        <div className="service-toWhom-text">
-          <h1>5. SERVICE SEEKER</h1>
-          <h2>
-            Need a trusted partner with strong fundamentals to own multiple
-            operational touch points
-          </h2>
-          <div className="service-toWhom-points">
-            <p>Helping you focus on your own core business operations</p>
-            <p>
-              Seeks a reliable partner with requisite subject matter expertise
-            </p>
-            <p>Needs wide range of services at best commercials</p>
-            <p>Corporate assurance on effective service delivery</p>
-          </div>
-        </div>
-
-        <div className="service-toWhom-text">
-          <h1>6. SERVICE SEEKER</h1>
-          <h2>
-            Need a trusted partner with strong fundamentals to own multiple
-            operational touch points
-          </h2>
-          <div className="service-toWhom-points">
-            <p>Helping you focus on your own core business operations</p>
-            <p>
-              Seeks a reliable partner with requisite subject matter expertise
-            </p>
-            <p>Needs wide range of services at best commercials</p>
-            <p>Corporate assurance on effective service delivery</p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );

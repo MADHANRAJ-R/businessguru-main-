@@ -11,13 +11,14 @@ import ServiceRoute6 from "./routes/serviceroute6";
 import ServiceRoute7 from "./routes/serviceroute7";
 import ServiceRoute8 from "./routes/serviceroute8";
 import ContactRoute from "./routes/contactroute";
+import CompanyRoute from "./routes/companyroute";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomeRoute />} />
-        <Route path="/company" element={<HomeRoute />} />
+        <Route path="/company" element={<CompanyRoute />} />
         <Route path="/services" element={<ServiceRoute />} />
         <Route path="/contact" element={<ContactRoute />} />
         <Route path="/services/startup-advisory" element={<ServiceRoute1 />} />

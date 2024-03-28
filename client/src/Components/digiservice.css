@@ -1,0 +1,65 @@
+.digiservice-process-div {
+  width: 100%;
+  padding: 80px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: antiquewhite;
+  row-gap: 50px;
+}
+
+.digiservice-toWhom-text {
+  width: 60%;
+  height: fit-content;
+  padding: 0 20px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: left;
+}
+.digiservice-toWhom-text h1 {
+  font-size: 30px;
+}
+.digitoWhom-points p {
+  margin-top: 6px;
+  font-size: 17px;
+  border-bottom: 1px solid rgb(228, 223, 223);
+}
+
+.digiservice-toWhom-text h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(20, 20, 20);
+}
+
+.digiservice-toWhom-points {
+  display: flex;
+  flex-direction: column;
+}
+.digiservice-toWhom-points p {
+  margin-top: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(228, 223, 223);
+}
+
+@media only screen and (max-width: 767px) {
+  .digiservice-process-div {
+    width: 100%;
+    padding: 40px 10px;
+    display: flex;
+  }
+
+  .digiservice-toWhom-text {
+    width: 100%;
+  }
+  .digiservice-toWhom-text h1 {
+    font-size: 24px;
+  }
+  .digitoWhom-points p {
+    margin-top: 10px;
+  }
+}
