@@ -1,14 +1,12 @@
 import React from "react";
 import companylogo from "../Assets/companyLogo.jpg";
-import "./servicetemplate.css"
-const Servicetemplate = () => {
+import "./servicetemplate.css";
+const Servicetemplate = (props) => {
   return (
-    <section  className="service-template">
+    <section className="service-template">
       <div className="service-template-div-1">
         <div className="intro-img-div">
-          
-            <img src={companylogo} alt="companylogo" />
-          
+          <img src={companylogo} alt="companylogo" />
         </div>
         <div className="service-intro-content-div">
           <h1>Introduction</h1>
@@ -39,11 +37,8 @@ const Servicetemplate = () => {
       </div>
       <div className="service-process-div">
         <div className="service-toWhom-text">
-          <h1>1. SERVICE SEEKER</h1>
-          <h2>
-            Need a trusted partner with strong fundamentals to own multiple
-            operational touch points
-          </h2>
+          <h1>{props.title1}</h1>
+          <h2>{props.subtitle1}</h2>
           <div className="service-toWhom-points">
             <p>Helping you focus on your own core business operations</p>
             <p>

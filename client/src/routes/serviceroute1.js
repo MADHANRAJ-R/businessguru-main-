@@ -5,6 +5,21 @@ import Form from "../Components/form";
 import Servicetemplate from "../Components/servicetemplate";
 
 const ServiceRoute1 = () => {
+  const title = {
+    title1: "1.Business Registration",
+    title2: "Legal & Compliance",
+    title3: "GST & Income Tax Registration",
+    title4: "Government Schemes and Subsidies",
+  };
+
+  const subTitle = {
+    subTitle1: "Transparent | Seamless | SLA-driven",
+  };
+
+  const points = {
+    name: "krishna",
+  };
+
   return (
     <div>
       <Header />
@@ -12,7 +27,7 @@ const ServiceRoute1 = () => {
         serviceName="Startup Advisory"
         apiRoute="http://localhost:3001/startup-advisory"
       />
-      <Servicetemplate />
+      <Servicetemplate title1={title.title1} subtitle1={subTitle.subTitle1} />
       <Footer />
     </div>
   );
