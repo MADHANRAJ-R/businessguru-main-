@@ -3,7 +3,8 @@ import "./about.css";
 
 const About = () => {
   return (
-    <div className="container-div">
+    <section className="aboutsection">
+      <div className="aboutcontainer-div">
       <h1>WHO ARE WE ?</h1>
       <p>
         We are Gururayar Associates Govt registered and ISO 9001-2015 certified
@@ -18,7 +19,7 @@ const About = () => {
           "To give real service, you must add something which cannot be bought
           or measured by MONEY"
         </p>
-        <footer>- Sir M.Vishveshwarayya.</footer>
+        <b>- Sir M.Vishveshwarayya.</b>
       </blockquote>
       <h2>OUR MISSION:</h2>
       <p>
@@ -36,14 +37,14 @@ const About = () => {
       </p>
       <div className="motto-div">
         <p>
-          OUR MOTTO:{" "}
+          OUR MOTTO:{" "} <br />
           <span>
-            H E L P &nbsp; E A C H &nbsp; O T H E R &nbsp;! &nbsp; G R O W
-            &nbsp; T O G E T H E R &nbsp;!
+            HELP EACH  OTHER ! GROW TOGETHER !
           </span>
         </p>
       </div>
     </div>
+    </section>
   );
 };
 
