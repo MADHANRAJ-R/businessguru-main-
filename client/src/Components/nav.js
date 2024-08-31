@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 const Nav = (props) => {
   const navigate = useNavigate();
-  const [isServiceOpen, setIsServiceOpen] = useState(false);
+  const [isServiceOpen] = useState(false);
   const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
   const handleCompany = () => {
@@ -29,11 +29,11 @@ const Nav = (props) => {
     }, 200);
   };
 
-  const handleService = () => {
-    setIsServiceOpen(!isServiceOpen);
+  const handleEnquiry = () => {
+    // setIsServiceOpen(!isServiceOpen);
     setIsSubmenuOpen(false);
     setTimeout(() => {
-      navigate("/services");
+      navigate("/general-enquiry");
       window.scrollTo(0, 0);
     }, 200);
   };
@@ -56,7 +56,7 @@ const Nav = (props) => {
 
   const handleService2 = () => {
     setTimeout(() => {
-      navigate("/services/human-resource");
+      navigate("/services/business-strategy");
       window.scrollTo(0, 0);
     }, 200);
   };
@@ -121,26 +121,33 @@ const Nav = (props) => {
           <div className="nav-contact">
             <div className="contact-div-1">
               <img src={phonelogo} alt="company-logo" />
-              <p>91.9555626260</p>
+              <a href="https://wa.me/918637608759"  target="_blank" rel="noreferrer">+91-8637608759</a>
             </div>
             <div className="contact-div-1">
               <img src={emaillogo} alt="company-logo" />
-              <p>businessguru@gmail.com</p>
+              <a href="mailto:businessguruoffice@gmail.com">businessguruoffice@gmail.com</a>
             </div>
           </div>
 
           <div className="nav-div-3">
             <div className="social-media-1">
+              <a href="https://www.linkedin.com/company/31344253/admin/dashboard/"  target="_blank" rel="noreferrer">              
               <img src={linkedinlogo} alt="company-logo" />
+              </a>
             </div>
             <div className="social-media-1">
+              <a href="https://www.facebook.com/profile.php?id=100063566156848" target="_blank" rel="noreferrer" >
               <img src={fblogo} alt="company-logo" />
+              </a>
             </div>
             <div className="social-media-1">
               <img src={instalogo} alt="company-logo" />
             </div>
             <div className="social-media-1">
-              <img src={walogo} alt="company-logo" />
+            <a href="https://wa.me/918637608759"  target="_blank" rel="noreferrer">     
+            <img src={walogo} alt="company-logo" />         
+            </a>
+              
             </div>
           </div>
         </div>
@@ -157,15 +164,17 @@ const Nav = (props) => {
             Company
           </p>
           <p>
-            <p className={props.active3} onClick={handleService}>
+            <p className={props.active3}>
               Service{" "}
               <i
                 className={`fas fa-caret-${isServiceOpen ? "up" : "down"}`}
               ></i>
             </p>
             <div className="dropdownmenu">
+            <p  onClick={handleEnquiry}>General Enquiry</p>
+
               <p onClick={handleService1}>Start-Up Advisory</p>
-              <p onClick={handleService2}>Human Resource</p>
+              <p onClick={handleService2}>Business Strategy</p>
               <p>
                 <p onClick={handleService3}>
                   Marketing Consulting{" "}

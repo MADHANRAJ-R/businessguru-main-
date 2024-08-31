@@ -4,7 +4,17 @@ import "./hrservice.css";
 const Hrservice = ({ serviceMappings2 }) => {
   return (
     <section className="hrsection">
-      <h1 className="hrh1">1. Virtual Chief Human Resource Officer (vCHRO)</h1>
+      <h1 className="hrh1">Business Strategy Creation Services</h1>
+      <p className="BSP">
+        In today’s fast-paced and ever-changing business landscape, having a
+        well-defined and adaptable strategy is crucial for long-term success.
+        Our business strategy creation services are tailored to help
+        organizations of all sizes and industries craft clear, actionable, and
+        data-driven plans that align with their vision and objectives. We
+        partner with you to build a robust strategy that drives sustainable
+        growth, competitiveness, and innovation.
+      </p>
+      <h1 className="hrh1">1. Our Approach to Business Strategy Creation</h1>
       <div className="service-process-div">
         {serviceMappings2.map((mapping, index) => (
           <div className="service-toWhom-text" key={index}>
@@ -17,80 +27,44 @@ const Hrservice = ({ serviceMappings2 }) => {
             </div>
           </div>
         ))}
-        
-        
       </div>
-      <h1 className="hrh1">2. HR Shared Services</h1>
-        <div className="service-process-div">
-        
+
+      <h1 className="hrh1">2. Why Choose Us for Business Strategy Creation?</h1>
+      <div className="service-process-div">
         <div className="service-toWhom-text">
-        <div className="service-toWhom-points">
-            <p>Strategic HR & Advisory</p>
-            <p>HR Policy Formulation</p>
-            <p>Compensation Designing</p>
-          </div>
-        </div>
-        <div className="service-toWhom-text">
-        <div className="service-toWhom-points">
-            <p>Payroll Administration</p>
-            <p>Creating KRA’s</p>
-            <p>Dedicated Key Account Manager (KAM)</p>
-          </div>
-        </div>
-        <div className="service-toWhom-text">
-        <div className="service-toWhom-points">
-            <p>HR Automation – HRMS & ESS Portal</p>
-            <p>Statutory Compliance & Advisory</p>
-            <p>Grievance Handling</p>
-          </div>
-        </div>
-          
-          
-         
-        
-        </div>
-        
-        <h1 className="hrh1">3. Recruitment Services</h1>
-        <div className="service-process-div">
-        <div className="service-toWhom-text">
-          <h1>Access to the best Candidates</h1>
+          <h1>Tailored Solutions</h1>
           <h2>
-            Our team specializing in working from our own databases,
-            traditional/ new recruitment mediums, and using our extensive
-            industry & domain expertise
+            We don’t believe in one-size-fits-all. Each strategy is customized
+            to your unique business needs, market dynamics, and growth
+            aspirations.
           </h2>
         </div>
         <div className="service-toWhom-text">
-          <h1>Recruitment Process Outsourcing</h1>
+          <h1>Expert Insights</h1>
           <h2>
-            Our technical RPO team handles your complete recruitment process to
-            let you focus on your core business
+            Our experienced strategists bring industry-specific expertise and
+            cutting-edge thinking to help you navigate complex business
+            challenges.
           </h2>
         </div>
         <div className="service-toWhom-text">
-          <h1>Automation Enablement</h1>
+          <h1>Data-Driven Approach</h1>
           <h2>
-            We partner with the industry leading Artificial Intelligence driven
-            recruitment tools, ATS, Employee screening & pulse check tools, etc.
+            We rely on rigorous data analysis to inform our recommendations,
+            ensuring that your strategy is built on a solid foundation of market
+            intelligence and financial acumen.
           </h2>
         </div>
         <div className="service-toWhom-text">
-          <h1>Affordable & Efficient Services</h1>
+          <h1>End-to-End Support</h1>
           <h2>
-            As our specialized team of recruiters get into a calibration call
-            with your team, we understand your business and goals, and hire the
-            right people in a timely, cost-effective manner
+            From analysis and planning to execution and refinement, we partner
+            with you every step of the way to ensure your strategic goals are
+            met.
           </h2>
         </div>
-        <div className="service-toWhom-text">
-          <h1>Add-on Services</h1>
-          <h2>
-            Technical interviews (TIAS), Psychometric tests, contract and
-            permanent recruitment, executive search, project support, managed
-            services, etc.
-          </h2>
-        </div>
-       </div>
+      </div>
+      <p className="BSP">With our business strategy creation services, you can feel confident that your business is equipped with a well-structured, actionable plan to drive growth, optimize performance, and secure long-term success in an increasingly competitive environment. Let us help you turn your vision into reality.</p>
     </section>
   );
 };

@@ -80,7 +80,7 @@ header {
   align-items: center;
 }
 .nav-contact {
-  width: 400px;
+  width: 480px;
   /* border: 1px solid black; */
   display: flex;
   justify-content: center;
@@ -100,9 +100,11 @@ header {
   /* border: 1px solid black; */
   margin-right: 5px;
 }
-.contact-div-1 p {
+.contact-div-1 a {
   font-size: 1.1em;
   font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 .nav-div-3 {
   width: 200px;

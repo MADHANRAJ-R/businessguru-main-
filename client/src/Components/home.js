@@ -38,45 +38,57 @@ const HomeComp = () => {
   };
   return (
     <section className="containerhome">
-      <div className="backgroundlayer"></div>
+      
       <div className="banner1">
         <img src={img1} alt="imagebackground" />
+        <div className="textboxmaindiv">
         <div className="text-box text-box1">
           
           <h1>Startup-Advisory Services</h1>
           <p>Connect | Consult | Collaborate</p>
-          <button onClick={handleService1}>View Details</button>
+          <button className="button2" onClick={handleService1}>View Details</button>
+        </div>
         </div>
       </div>
 
       <div className="banner2">
         <img src={img2} alt="imagebackground" />
+        <div className="textboxmaindiv">
         <div className="text-box text-box2">
          
-          <h1>Human Resource Services</h1>
-          <p>Connect | Consult | Collaborate</p>
-          <button onClick={handleService2}>View Details</button>
+         <h1>Human Resource Services</h1>
+         <p>Connect | Consult | Collaborate</p>
+         <button className="button2" onClick={handleService2}>View Details</button>
+       </div>
         </div>
+        
       </div>
 
       <div className="banner3">
         <img src={img3} alt="imagebackground" />
+        <div className="textboxmaindiv">
         <div className="text-box text-box3">
           
           <h1>Marketing Consulting Services</h1>
           <p>Connect | Consult | Collaborate</p>
-          <button onClick={handleService3}>View Details</button>
+          <button className="button2" onClick={handleService3}>View Details</button>
         </div>
+        </div>
+        
       </div>
 
       <div className="banner4">
         <img src={img4} alt="imagebackground" />
+        <div className="textboxmaindiv">
         <div className="text-box text-box4">
           
           <h1>Virtual CXO Services</h1>
           <p>Connect | Consult | Collaborate</p>
-          <button onClick={handleService6}>View Details</button>
+          <button className="button2" onClick={handleService6}>View Details</button>
         </div>
+
+        </div>
+       
       </div>
     </section>
   );

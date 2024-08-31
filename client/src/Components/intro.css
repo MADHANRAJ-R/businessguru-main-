@@ -16,10 +16,11 @@
     width: 560px;
     
   }
-  .intro-video-div iframe{
-    width: 100%;
+  .intro-video-div img{
+    width: 85%;
+
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 
   }
   .intro-content-div{

@@ -1,5 +1,6 @@
 import React from "react";
 import "./intro.css";
+import introImg from "../Assets/intro-img.jpg"
 
 
 const Intro = () => {
@@ -8,7 +9,7 @@ const Intro = () => {
       <div className="intro-div">
         <div className="intro-video-div">
           <div className="video-div">
-            <iframe
+            {/* <iframe
               
               height="350"
               src="https://www.youtube.com/embed/DgJ4sgI5GXM?si=dsxg8-PlpNIOFznr"
@@ -16,7 +17,8 @@ const Intro = () => {
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-            ></iframe>
+            ></iframe> */}
+            <img src={introImg} alt="introImg" />
           </div>
         </div>
         <div className="intro-content-div">

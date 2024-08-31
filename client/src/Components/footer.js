@@ -85,7 +85,7 @@ const Footer = () => {
           <h3>Services</h3>
           <div className="s-inner-div-1">
             <p onClick={handleService1}>Startup Advisory</p>
-            <p onClick={handleService2}>Human Resource</p>
+            <p onClick={handleService2}>Business Strategy</p>
             <p onClick={handleService3}>Marketing Consulting</p>
             <p onClick={handleService4}>Digital Marketing</p>
             <p onClick={handleService5}>Lead Generation</p>
@@ -97,31 +97,37 @@ const Footer = () => {
         <div className="footer-3">
           <h3>Get in Touch</h3>
           <div className="s-inner-div">
-            <p>BusinessGuru Consulting Pvt. Ltd.</p>
-            <p>CIN: U11111HR1111PTC111111 </p>
-            <p>Address line 1</p>
-            <p>Address line 2</p>
+            <p>BusinessGuru</p>
+            
+            <p>D-54, 2nd Floor, Trichy Coworks, 9th A Cross,</p>
+            <p> Thillai Nagar, Tiruchirappalli, Tamil Nadu 620018.</p>
             <span>
               {" "}
               <p>
-                <b>Phone:</b> 91.111111111
+                <b>Phone:</b> <a href="https://wa.me/918637608759"  target="_blank" rel="noreferrer">+91-8637608759</a>
               </p>
             </span>
             <p>
-              <b>Email:</b> Businessguru@gmail.com
+              <b>Email:</b> <a href="mailto:businessguruoffice@gmail.com">businessguruoffice@gmail.com</a>
             </p>
             <div className="footer-div-3">
               <div className="social-media-2">
-                <img src={linkedinlogo} alt="company-logo" />
+              <a href="https://www.linkedin.com/company/31344253/admin/dashboard/"  target="_blank" rel="noreferrer">              
+              <img src={linkedinlogo} alt="company-logo" />
+              </a>
               </div>
               <div className="social-media-2">
-                <img src={fblogo} alt="company-logo" />
+              <a href="https://www.facebook.com/profile.php?id=100063566156848" target="_blank" rel="noreferrer" >
+              <img src={fblogo} alt="company-logo" />
+              </a>
               </div>
               <div className="social-media-2">
                 <img src={instalogo} alt="company-logo" />
               </div>
               <div className="social-media-2">
-                <img src={walogo} alt="company-logo" />
+              <a href="https://wa.me/918637608759"  target="_blank" rel="noreferrer">     
+            <img src={walogo} alt="company-logo" />         
+            </a>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const ServiceRoute = () => {
   return (
     <div>
       <Header active3="active"  />
-      <Form apiRoute="http://localhost:3001/services" />
+      <Form apiRoute="http://localhost:3001/general-enquiry" />
       <ServicesPortfolio />
       <Footer />
     </div>

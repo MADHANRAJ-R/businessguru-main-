@@ -10,6 +10,9 @@
     padding: 160px 10px 50px 10px;
    
   }
+  .active1{
+    background-color: antiquewhite;
+  }
   
   .left {
     width: fit-content;

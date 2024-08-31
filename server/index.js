@@ -23,7 +23,7 @@ app.use(express.json());
 const obj = {
   Mainservice: (organization, name, email, phone, message) => {
     let mailContent = `<p>You got a new visitor for Business Guru website.</p>
-                     <p>Enquiry: Services <br /> 
+                     <p>Enquiry: General Enquiry <br /> 
                      Organization: ${organization} <br />
                      Name: ${name} <br />
                      Email: ${email} <br />
@@ -68,7 +68,7 @@ const obj = {
 
   service2: (organization, name, email, phone, message) => {
     let mailContent = `<p>You got a new visitor for Business Guru website.</p>
-                     <p>Enquiry: Human Resource <br /> 
+                     <p>Enquiry:Business Strategy <br /> 
                      Organization: ${organization} <br />
                      Name: ${name} <br />
                      Email: ${email} <br />
@@ -173,7 +173,7 @@ const obj = {
 };
 
 // Main Service
-app.post("/services", (req, res) => {
+app.post("/general-enquiry", (req, res) => {
   const { organization, name, phone, email, message } = req.body;
   //nodemailer transporter
   const transporter = nodemailer.createTransport({
@@ -269,7 +269,7 @@ app.post("/startup-advisory", (req, res) => {
 });
 
 //service-2
-app.post("/human-resource", (req, res) => {
+app.post("/business-strategy", (req, res) => {
   const { organization, name, phone, email, message } = req.body;
   //nodemailer transporter
   const transporter = nodemailer.createTransport({

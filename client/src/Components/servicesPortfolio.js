@@ -81,7 +81,7 @@ const ServicesPortfolio = () => {
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService2}>
           <img src={hrlogo} alt="company-logo" />
-          <h3>Human Resource</h3>
+          <h3>Business Strategy</h3>
         </div>
         <div className="ServicesPortfolio-card" onClick={handleService3}>
           <img src={marketinglogo} alt="company-logo" />

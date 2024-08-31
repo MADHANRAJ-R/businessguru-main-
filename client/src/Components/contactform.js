@@ -43,94 +43,120 @@ function Contactform(props) {
 
   return (
     <div className="container">
-        <div className="footer-3">
-          <h2>Get in Touch</h2>
-          <div className="s-inner-div">
-            <p>BusinessGuru Consulting Pvt. Ltd.</p>
-            <p>CIN: U11111HR1111PTC111111 </p>
-            <p>Address line 1</p>
-            <p>Address line 2</p>
-            <span>
-              {" "}
-              <p>
-                <b>Phone:</b> 91.111111111
-              </p>
-            </span>
+      <div className="footer-3">
+        <h2>Get in Touch</h2>
+        <div className="s-inner-div">
+          <p>BusinessGuru</p>
+          <p>D-54, 2nd Floor, Trichy Coworks, 9th A Cross,</p>
+          <p>Thillai Nagar, Tiruchirappalli, Tamil Nadu 620018.</p>
+          <span>
+            {" "}
             <p>
-              <b>Email:</b> Businessguru@gmail.com
+              <b>Phone:</b>{" "}
+              <a
+                href="https://wa.me/918637608759"
+                target="_blank"
+                rel="noreferrer"
+              >
+                +91-8637608759
+              </a>
             </p>
-            <div className="footer-div-3">
-              <div className="social-media-2">
+          </span>
+          <p>
+            <b>Email:</b>{" "}
+            <a href="mailto:businessguruoffice@gmail.com">
+              businessguruoffice@gmail.com
+            </a>
+          </p>
+          <div className="footer-div-3">
+            <div className="social-media-2">
+              <a
+                href="https://www.linkedin.com/company/31344253/admin/dashboard/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={linkedinlogo} alt="company-logo" />
-              </div>
-              <div className="social-media-2">
+              </a>
+            </div>
+            <div className="social-media-2">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063566156848"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={fblogo} alt="company-logo" />
-              </div>
-              <div className="social-media-2">
-                <img src={instalogo} alt="company-logo" />
-              </div>
-              <div className="social-media-2">
+              </a>{" "}
+            </div>
+            <div className="social-media-2">
+              <img src={instalogo} alt="company-logo" />
+            </div>
+            <div className="social-media-2">
+              <a
+                href="https://wa.me/918637608759"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={walogo} alt="company-logo" />
-              </div>
+              </a>{" "}
             </div>
           </div>
         </div>
-     
-        <div className="form-container">
-          <form onSubmit={handleSubmit}>
-            <h3>Contact Us</h3>
-            <div className="input-group">
-              <input
-                placeholder="Organization"
-                type="text"
-                id="organization"
-                value={organization}
-                onChange={(e) => setOrganization(e.target.value)}
-                required
-              />
-            </div>
-            <div className="input-group">
-              <input
-                placeholder="Name"
-                type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-            </div>
-            <div className="input-group">
-              <input
-                placeholder="Phone"
-                type="tel"
-                id="phone"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                required
-              />
-            </div>
-            <div className="input-group">
-              <input
-                placeholder="Email"
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-            <div className="input-group">
-              <textarea
-                placeholder="Message"
-                id="message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              />
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      
+      </div>
+
+      <div className="form-container">
+        <form onSubmit={handleSubmit}>
+          <h3>Contact Us</h3>
+          <div className="input-group">
+            <input
+              placeholder="Organization"
+              type="text"
+              id="organization"
+              value={organization}
+              onChange={(e) => setOrganization(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <input
+              placeholder="Name"
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <input
+              placeholder="Phone"
+              type="tel"
+              id="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <input
+              placeholder="Email"
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div className="input-group">
+            <textarea
+              placeholder="Message"
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 }

@@ -87,6 +87,10 @@ footer {
   font-weight: 450;
 }
 
+.s-inner-div a{
+  text-decoration: none;
+  color: white;
+}
 .footer-div-3 {
   margin-top: 30px;
   width: fit-content;

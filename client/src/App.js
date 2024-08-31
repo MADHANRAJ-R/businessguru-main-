@@ -19,10 +19,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeRoute />} />
         <Route path="/company" element={<CompanyRoute />} />
-        <Route path="/services" element={<ServiceRoute />} />
+        <Route path="/general-enquiry" element={<ServiceRoute />} />
         <Route path="/contact" element={<ContactRoute />} />
         <Route path="/services/startup-advisory" element={<ServiceRoute1 />} />
-        <Route path="/services/human-resource" element={<ServiceRoute2 />} />
+        <Route path="/services/business-strategy" element={<ServiceRoute2 />} />
         <Route
           path="/services/marketing-consulting"
           element={<ServiceRoute3 />}

@@ -7,11 +7,10 @@ const About = () => {
       <div className="aboutcontainer-div">
         <h1>WHO ARE WE ?</h1>
         <p>
-          We are Business Guru, Govt registered and ISO 9001-2015 certified
-          single ownership company established in 2016 with 25 years of
-          Industrial, commercial and residential design/consultancy experience
-          in the field, we decided to alter direction. Now, we share our passion
-          by helping others.
+          We are Business Guru single ownership company established in 2024 with
+          25 years of Industrial, commercial and residential design/consultancy
+          experience in the field, we decided to alter direction. Now, we share
+          our passion by helping others.
         </p>
         <h2>OUR VISION :</h2>
         <blockquote>
@@ -23,12 +22,10 @@ const About = () => {
         </blockquote>
         <h2>OUR MISSION:</h2>
         <p>
-          To build a independent professional structural design
-          engineers/consultants in all over India and abroad as well. We train
-          people with our practical design methodology which is being currently
-          practiced in engineering consultancy. We are committed to excel the
-          quality and economic structural design services to our clients as
-          well.
+          To build business growth for companies, entrepreneurs, owners, and
+          freelancers all over India and abroad as well. We are committed to excelling in business
+          consulting services to our clients. We work to promote the revenue of
+          companies by at least fivefold.
         </p>
         <p>Our ramp up process is designed to empower your team.</p>
         <p>
