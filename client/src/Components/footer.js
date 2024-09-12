@@ -4,7 +4,7 @@ import instalogo from "../Assets/instalogo.jpg";
 import fblogo from "../Assets/fblogo.jpg";
 import walogo from "../Assets/walogo.jpg";
 import linkedinlogo from "../Assets/linkedinlogo.jpg";
-import companylogo from "../Assets/companyLogo.jpg";
+import companylogo from "../Assets/domainLogo.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
 
   const handleService2 = () => {
     setTimeout(() => {
-      navigate("/services/human-resource");
+      navigate("/services/business-strategy");
       window.scrollTo(0, 0);
     }, 200);
   };

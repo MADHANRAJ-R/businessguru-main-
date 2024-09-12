@@ -18,7 +18,7 @@ const HomeComp = () => {
 
   const handleService2 = () => {
     setTimeout(() => {
-      navigate("/services/human-resource");
+      navigate("/services/business-strategy");
       window.scrollTo(0, 0);
     }, 200);
   };
@@ -56,7 +56,7 @@ const HomeComp = () => {
         <div className="textboxmaindiv">
         <div className="text-box text-box2">
          
-         <h1>Human Resource Services</h1>
+         <h1>Business Strategy Services</h1>
          <p>Connect | Consult | Collaborate</p>
          <button className="button2" onClick={handleService2}>View Details</button>
        </div>

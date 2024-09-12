@@ -24,7 +24,7 @@ const ServicesPortfolio = () => {
 
   const handleService2 = () => {
     setTimeout(() => {
-      navigate("/services/human-resource");
+      navigate("/services/business-strategy");
       window.scrollTo(0, 0);
     }, 200);
   };

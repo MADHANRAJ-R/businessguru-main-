@@ -24,9 +24,9 @@ const Intro = () => {
         <div className="intro-content-div">
           <h1>Introduction</h1>
           <p>
-            Business Guru is a leading B2B services marketplace for
+            Business Guru is a leading B2C & B2B services marketplace for
             Cross-Functional Business Outsourcing, Consulting, and Execution
-            needs through the platform businessguru.com.
+            needs through the platform business-guru.in.
           </p>
           <br />
           <p>

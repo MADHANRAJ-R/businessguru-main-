@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./nav.css";
-import companylogo from "../Assets/companyLogo.jpg";
+import companylogo from "../Assets/domainLogo.jpg";
 import instalogo from "../Assets/instalogo.jpg";
 import fblogo from "../Assets/fblogo.jpg";
 import walogo from "../Assets/walogo.jpg";

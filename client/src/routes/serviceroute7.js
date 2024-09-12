@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../Components/nav";
 import Footer from "../Components/footer";
 import Form from "../Components/form";
-import Servicetemplate from "../Components/servicetemplate";
+import Webdev from "../Components/webdev";
+
 
 const ServiceRoute7 = () => {
   return (
@@ -12,7 +13,8 @@ const ServiceRoute7 = () => {
         serviceName="Web Development"
         apiRoute="http://localhost:3001/web-development"
       />
-      <Servicetemplate />
+      <Webdev />
+      
       <Footer />
     </div>
   );

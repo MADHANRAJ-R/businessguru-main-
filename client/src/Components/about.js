@@ -7,9 +7,9 @@ const About = () => {
       <div className="aboutcontainer-div">
         <h1>WHO ARE WE ?</h1>
         <p>
-          We are Business Guru single ownership company established in 2024 with
-          25 years of Industrial, commercial and residential design/consultancy
-          experience in the field, we decided to alter direction. Now, we share
+          We are BusinessGuru, single ownership company established in 2024 with
+          6 years of business consultancy 
+          experience. Now, we share
           our passion by helping others.
         </p>
         <h2>OUR VISION :</h2>

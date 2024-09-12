@@ -244,7 +244,10 @@ header {
     /* border: 2px solid black; */
   }
   .title {
-    font-size: 25px;
+    font-size: 22px;
+  }
+  .title-quote{
+    font-size: 14px;
   }
   .nav-div-2 {
     display: none;
