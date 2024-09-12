@@ -35,15 +35,30 @@
     text-overflow: clip;
     font-size: 18px;
     color: rgb(68, 68, 68);
+    text-align: justify;
   }
 
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 768px) {
     .intro-div {
       
       padding:40px 15px;
+      
      
     }
+    .intro-video-div {
+      width: 100%;
+      
+    }
+    .intro-video-div img{
+      width: 100%;
+  
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      border-radius: 0.6rem;
+  
+    }
+
+    
     
    
 

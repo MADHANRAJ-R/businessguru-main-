@@ -25,9 +25,9 @@ const About = () => {
           To build business growth for companies, entrepreneurs, owners, and
           freelancers all over India and abroad as well. We are committed to excelling in business
           consulting services to our clients. We work to promote the revenue of
-          companies by at least fivefold.
+          companies by at least fivefold. Our ramp up process is designed to empower your team.
         </p>
-        <p>Our ramp up process is designed to empower your team.</p>
+        
         <p>
           Business mentors are key—that's why when it comes to client selection,
           we're choosy. We want to give each of you the right time and guidance
